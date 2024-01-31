@@ -7,12 +7,12 @@
   <body>
     <header class="page-header">
       <nav class="navigation">
-        <a class="navigation-logo" href="#">
-          <img class="page-logo" src="#" alt="Логотип Седона">
+        <a class="navigation-logo" href="index.html">
+          <img class="page-logo" src="images/logo-sedona.svg" width="140" height="70"S alt="Логотип Седона">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
@@ -25,6 +25,7 @@
         <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img src="/images/icon-search.svg" width="20" height="20" alt="Поиск">
               <span class="visually-hidden">
                 Поиск
               </span>
@@ -32,16 +33,17 @@
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <img src="/images/icon-heart.svg" width="18" height="17" alt="Избранное">
               <span class="visually-hidden">
                 Избранное
               </span>
-              <span class="visually-hidden">
-                12 <!--есть вопрос-->
+              <span class="count">
+                12
               </span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="button button-navigation" href="№">Хочу сюда!</a>
+            <a class="button button-navigation" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
@@ -61,7 +63,7 @@
       </header>
 
       <section class="catalog-hotels">
-        <h2 class="visually-hidden">Список гостинец с фильтами</h2>
+        <h2 class="visually-hidden">Список гостинец с фильтрами</h2>
         <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
 
           <fieldset class="catalog-filter-group">
@@ -108,6 +110,11 @@
                   Аппартаменты
                 </label>
               </li>
+          </fieldset>
+          <fieldset class="cost">
+            <p>Стоимость, ₽:</p>
+            <label><span>от</span><input type="text" name="cost" value="0"></label>
+            <label><span>до</span><input type="text" name="cost" value="9000"></label>
           </fieldset>
 
           <button class="button" type="submit">Применить</button>
@@ -211,6 +218,16 @@
           </li>
           </ul>
       </section>
+
+      <section class="subscription">
+        <h2 class="subscription-title">Подпишитесь на рассылку</h2>
+        <p class="subscription-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="subscription-email">Email</label>
+          <input class="field" placeholder="email@example.com" type="email" name="subscription-email" id="subscription-email" required>
+        <button class="button button-subscribe" type="submit">Подписаться</button>
+        </form>
+      </section>
     </main>
 
 
@@ -219,16 +236,19 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a class="button" href="https://vk.com/htmlacademy">
+              <img src="images/icon-vk.svg" width="25" height="15">
               <span class="visually-hidden">ВКонтакте</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://t.me/htmlacademy">
+              <img src="images/icon-telegram.svg" width="18" height="16">
               <span class="visually-hidden">Telegram</span>
             </a>
           </li>
           <li class="footer-social-item">
             <a class="button" href="https://youtube.com/user/htmlacademyru">
+              <img src="/images/icon-you-tube.svg" width="23" height="18">
               <span class="visually-hidden">YouTube</span>
             </a>
           </li>
@@ -236,12 +256,14 @@
       </section>
       <Section class="footer-contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <p>+7 (812) 812-12-12</p>
+        <address class="footer-contacts-address">
+          <a class="footer-contacts-address-phone" href="tel:+7 (812) 812-12-12"></a>
+        </address>
       </Section>
 
       <section class="footer-htmlacademy-link">
-        <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy
-        <img class="htmlacademy-logo" src="#" alt="Логотип html академия">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+        <img class="htmlacademy-logo" src="/images/logo-academy.svg" width="115" height="34" alt="Логотип html академия">
         </a>
       </section>
 
